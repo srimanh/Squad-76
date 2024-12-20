@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap');
+
+.navbar {
+  background-color: #D0FF00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 50px; 
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-family: 'Lexend', sans-serif;
+}
+
+.website-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  animation: popIn 0.7s ease-out forwards;
+  transform: scale(0);
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  animation: slideIn 1s ease-out forwards;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  background-color: white; 
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+.reachus-button {
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  animation: popIn 0.7s ease-out forwards;
+  transform: scale(0);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reachus-button:hover {
+  background-color: black;
+  color: white;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap');
+
+#hero{
+  background-color: #D0FF00;;
+}
+.hero-section {
+  background-color: #ECFFFC;
+  padding: 50px 20px;
+  font-family: "Lexend", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 1000px;
+  width: 1500px;
+}
+
+/* Typing Animation Container */
+.typing-container {
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 30px;
+  text-align: center;
+  white-space: pre-line;
+  line-height: 1.2;
+  position: relative;
+  bottom:  50px;
+  left:  -100px;
+}
+
+.typing-text span {
+  color: #4C00FF; 
+}
+
+/* Hero Content Box */
+.hero-content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #160266;
+  color: white;
+  border-radius: 25px;
+  width: 100;
+  max-width: 1200px;
+  padding: 40px;
+  animation: popIn 1s ease-out forwards;
+  transform: scale(0);
+  position: relative;
+  top: 0px;
+  left:-100px;
+}
+
+.content-left {
+  flex: 1;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.group-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.group-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+  
+
+/* Animations */
+@keyframes popIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

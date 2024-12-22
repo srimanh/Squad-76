@@ -10,6 +10,7 @@ function HeroSection() {
     let lineIndex = 0;
     let charIndex = 0;
 
+    //  Function to type the text with a delay
     const typeLine = () => {
       if (lineIndex < fullText.length) {
         if (charIndex <= fullText[lineIndex].length) {

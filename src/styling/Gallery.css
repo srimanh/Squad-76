@@ -4,10 +4,26 @@
     max-width: 100%;
     aspect-ratio: 1.5;
     margin: auto;
-    overflow: hidden;
+    position: relative;
+    right: 300px;
     background: #D0FF00;
     animation: background-pop 1s ease-in-out;
 }
+.gallery-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    position: relative;
+    width: 600px;
+    right:  -450px;
+    bottom: 340px;
+    z-index: 10;
+    animation: fadeInDown 1s ease-out forwards;
+  }
+  
 #gallery{
     position: relative;
     top: 2300px;

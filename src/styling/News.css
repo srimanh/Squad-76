@@ -5,7 +5,6 @@
   padding: 3rem 1rem;
   font-family: Arial, sans-serif;
   position: relative;
-  /* overflow: hidden; */
   height: 500px;
 }
 
@@ -17,7 +16,6 @@
   left: 500px;
   bottom: 150px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  /* margin-bottom: 2rem; */
 
 }
 
@@ -26,7 +24,7 @@
   max-width: 800px;
   max-height: 50px;
   margin: 0 auto;
-  right: 100px;
+  right: 200px;
 }
 
 .timeline-item {
@@ -56,7 +54,7 @@
   content: "";
   position: absolute;
   width: 8px;
-  background-color: #4caf50;
+  background-color: #4100DA;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -95,7 +93,7 @@
 .timeline-date {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #4caf50;
+  color: #4100DA;
   margin-bottom: 0.5rem;
 }
 .timeline-para {
@@ -110,7 +108,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #4caf50;
+  background: #4100DA;
   border: 4px solid #ffffff;
   top: 15px;
   border-radius: 50%;
